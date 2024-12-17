@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="Digital Clock.css">
-    <script defer src="Digital Clock.js"></script>
+    <title>To-Do List App </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="clock">
-            <!-- Date Display -->
-            <div id="day" class="day"></div>
-            
-            <!-- Time Display -->
-            <ul>
-                <li id="hour" class="hour">05</li>
-                <li class="point">:</li>
-                <li id="min" class="min">30</li>
-                <li class="point">:</li>
-                <li id="sec" class="sec">40</li>
-                <li id="ampm" class="ampm">AM</li>
-            </ul>
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="ADD your Text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task1</li>
+                <li>task2</li> -->
+            </ul> 
         </div>
+ 
     </div>
+<script src="index.js"></script>
 </body>
 </html>
